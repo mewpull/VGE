@@ -78,7 +78,11 @@ void * Window_GetPos(void *win, void *pos);
 void * Window_PrepareSwapchain(void *win, void *dev, void *imageDesc, void *imageCount);
 void * Window_SetPos(void *win, void *pos);
 
-#cgo LDFLAGS: -L../../cpp/build -lvgelib
+#cgo LDFLAGS: -L../../cpp/build -lvgelib_static
+#cgo LDFLAGS: -lstdc++
+#cgo LDFLAGS: -lm
+#cgo LDFLAGS: -lglfw
+#cgo LDFLAGS: -lvulkan
 */
 import "C"
 

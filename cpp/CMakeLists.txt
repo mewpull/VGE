@@ -47,6 +47,7 @@ else()
 endif()
 
 add_library(vgelib SHARED ${VGELIB_SRC} ${VGELIB_SRCH} ${VGELIB_OS_SRC})
+add_library(vgelib_static STATIC ${VGELIB_SRC} ${VGELIB_SRCH} ${VGELIB_OS_SRC})
 target_link_libraries(vgelib ${VULKAN_LIB} glfw)
 
 install(TARGETS vgelib DESTINATION "bin")
