@@ -370,11 +370,7 @@ import (
 /*`)
 	g.eachMethod(g.emitCDecl)
 	g.emitLn(`
-#cgo LDFLAGS: -L../../cpp/build -lvgelib_static
-#cgo LDFLAGS: -lstdc++
-#cgo LDFLAGS: -lm
-#cgo LDFLAGS: -lglfw
-#cgo LDFLAGS: -lvulkan
+#cgo LDFLAGS: -L../../cpp/build -lvgelib
 */
 import "C"
 
